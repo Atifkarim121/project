@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
-const MongoDBURI = process.env.MONGO_URI || 'mongodb://localhost/ManualAuth';
+const MongoDBURI = process.env.MONGO_URI || 'mongodb+srv://shan:karimshan121@cluster0.wiklqbz.mongodb.net/shanstack?retryWrites=true&w=majority';
 
 mongoose.connect(MongoDBURI, {
   useUnifiedTopology: true,
@@ -53,7 +53,7 @@ app.use((err, req, res, next) => {
   res.send(err.message);
 });
 
-// listen on port 3000
-app.listen(process.env.PORT || 3000, () => {
-  console.log('Express app listening on port 3000');
+// listen on port 3001
+app.listen(process.env.PORT || 3001, () => {
+  console.log('Express app listening on port 3001');
 });
