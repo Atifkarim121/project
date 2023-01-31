@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
-const MongoDBURI = process.env.MONGO_URI || 'mongodb+srv://shan:karimshan121@cluster0.wiklqbz.mongodb.net/shanstack?retryWrites=true&w=majority';
+const MongoDBURI = process.env.MONGO_URI || 'mongodb+srv://shan:shan@cluster0.45djxst.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(MongoDBURI, {
   useUnifiedTopology: true,
